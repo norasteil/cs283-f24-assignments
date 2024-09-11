@@ -1,4 +1,4 @@
-# Your README for A2 HERE
+# Nora Steil A2 README
 
 ![gameplay](NoraSteil_A2Gameplay.gif)
 

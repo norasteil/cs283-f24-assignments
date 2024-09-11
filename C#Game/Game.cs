@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Set up and run a game loop. Update the obstacles and players in the game.
+// September 2024
+// Nora Steil
+
+using System;
 using System.Drawing;
 using System.Media;
 using System.Security.Principal;

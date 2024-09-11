@@ -1,3 +1,7 @@
+// Draw and move an obstacle
+// September 2024
+// Nora Steil
+
 using System;
 using System.Security.Principal;
 using System.Drawing;
