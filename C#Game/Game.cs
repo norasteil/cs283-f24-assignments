@@ -5,6 +5,7 @@
 using System;
 using System.Drawing;
 using System.Media;
+using System.Security.Cryptography;
 using System.Security.Principal;
 using System.Windows.Forms;
 
@@ -48,6 +49,24 @@ public class Game
         }
 
         player.Draw(g);
+
+        DrawBox(Graphics g);
+    }
+
+    public void DrawBox(Graphics g)
+    {
+        Color rectColor = Color.FromArgb(200, 235, 148, 210);
+        Brush brush = new SolidBrush(rectColor);
+        g.FillRectangle(brush, 450, 350, 150, 125);
+
+        Font font = new Font("Arial", 15);
+        SolidBrush fontBrush = new SolidBrush(Color.Black);
+
+        StringFormat format = new StringFormat();
+        format.LineAlignment = StringAlignment.Center;
+        format.Alignment = StringAlignment.Center;
+
+        g.DrawString("Nora Steil", font, fontBrush, 525, 400, format); // what else should be in here? also toggle w + key
     }
 
     public void MouseClick(MouseEventArgs mouse)
@@ -75,6 +94,10 @@ public class Game
         else if (key.KeyCode == Keys.W || key.KeyCode == Keys.Up)
         {
             player.MoveUp();
+        }
+        else if (key.KeyCode == Keys.+)
+        {
+            
         }
     }
 }
