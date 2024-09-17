@@ -14,7 +14,13 @@ public class Game
     private Image bkgrd = Image.FromFile("gameBkg.jpg");
     private Player player;
     private Obstacle[] obstacles;
-
+    private int rectWidth = 150;
+    private int rectHeight = 75;
+    private int fontSize = 10;
+    private int rectY = 420;
+    private int stringX = 525;
+    private bool maximized = false;
+    
     public void Setup()
     {
         player = new Player();
@@ -50,23 +56,23 @@ public class Game
 
         player.Draw(g);
 
-        DrawBox(Graphics g);
+        DrawRectangle(g);
     }
 
-    public void DrawBox(Graphics g)
+    public void DrawRectangle(Graphics g)
     {
         Color rectColor = Color.FromArgb(200, 235, 148, 210);
         Brush brush = new SolidBrush(rectColor);
-        g.FillRectangle(brush, 450, 350, 150, 125);
+        g.FillRectangle(brush, 450, rectY, rectWidth, rectHeight);
 
-        Font font = new Font("Arial", 15);
+        Font font = new Font("Times", fontSize);
         SolidBrush fontBrush = new SolidBrush(Color.Black);
 
         StringFormat format = new StringFormat();
         format.LineAlignment = StringAlignment.Center;
         format.Alignment = StringAlignment.Center;
 
-        g.DrawString("Nora Steil", font, fontBrush, 525, 400, format); // what else should be in here? also toggle w + key
+        g.DrawString("Nora Steil\n9/12/24\nCS 283 Assignment 2", font, fontBrush, stringX, 450, format);
     }
 
     public void MouseClick(MouseEventArgs mouse)
@@ -95,9 +101,26 @@ public class Game
         {
             player.MoveUp();
         }
-        else if (key.KeyCode == Keys.+)
+        else if (key.KeyCode == Keys.Oemplus)
         {
-            
+            if (!maximized)
+            {
+                rectWidth += 20;
+                rectHeight += 10;
+                fontSize += 2;
+                rectY -= 5;
+                stringX += 10;
+                maximized = true;
+            }
+            else
+            {
+                rectWidth = 150;
+                rectHeight = 75;
+                fontSize = 10;
+                rectY = 420;
+                stringX = 525;
+                maximized = false;
+            }
         }
     }
 }
