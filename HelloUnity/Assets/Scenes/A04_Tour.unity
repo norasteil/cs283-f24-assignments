@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -122,6 +122,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1299863237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5628406938343432681, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+  m_PrefabInstance: {fileID: 1691113968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299863239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299863237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cfc1169e2ad408c927e2fdabfbedc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookSensitivity: 5
+  moveSpeed: 5
+  fwdFactor: 1
 --- !u!1001 &1691113968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +150,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1356746790102455620, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.493591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356746790102455620, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.069325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356746790102455620, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 99.79838
+      objectReference: {fileID: 0}
     - target: {fileID: 3336160428219081420, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
       propertyPath: m_Name
       value: GameTerrain
@@ -174,10 +206,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5628406938343432681, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5628406938343432681, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299863239}
   m_SourcePrefab: {fileID: 100100000, guid: a5c7bfe9e1ced455a9b8f2e2f808b595, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
