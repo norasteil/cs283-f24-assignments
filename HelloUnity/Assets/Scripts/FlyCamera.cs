@@ -11,8 +11,6 @@ public class FlyCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Cursor.lockState = CursorLockMode.Locked;
-        // Screen.lockCursor = true;
     }
 
     // Update is called once per frame
@@ -33,12 +31,5 @@ public class FlyCamera : MonoBehaviour
         Quaternion horiz = Quaternion.AngleAxis(mouseDelta.x, Vector3.up);
         Quaternion vert = Quaternion.AngleAxis(mouseDelta.y, Vector3.right);
         transform.rotation = vert * rotation * horiz;
-
-        // w: move forward, +z
-        // a: move left, -x
-        // d: move right, +x
-        // s: move backward, -z
-        // moving mouse left/right: rotate around y axis
-        // moving mouse up/down: rotate around x axis
     }
 }
