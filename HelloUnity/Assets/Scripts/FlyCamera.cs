@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FlyCamera : MonoBehaviour
 {
-    public float lookSensitivity = 5.0f;
-    public float moveSpeed = 5.0f;
-    public float fwdFactor = 1.0f;
+    public float lookSensitivity = 2.0f;
+    public float moveSpeed = 3.0f;
+    public float fwdFactor = 0.5f;
 
     // Start is called before the first frame update
     void Start()
