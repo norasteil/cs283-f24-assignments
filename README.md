@@ -2,6 +2,7 @@
 Assignment framework for CS283 Game Programming
 
 A04:
+![Tour](A04Tour.mov)
 
 
 A03:
