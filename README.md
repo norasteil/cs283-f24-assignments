@@ -2,7 +2,8 @@
 Assignment framework for CS283 Game Programming
 
 A05:
-
+![Follow Camera](FollowCamera.mov)
+![Spring Camera](SpringCamera.mov)
 
 A04:
 ![Tour](A04Tour.mov)
