@@ -1,6 +1,13 @@
 # cs283-f24-assignments
 Assignment framework for CS283 Game Programming
 
+A06:
+Asset Credits
+https://assetstore.unity.com/packages/3d/characters/animals/animated-goat-and-sheep-3d-low-poly-free-251910
+![Gaze](Gaze.mov)
+![Cubic Path](CubicPath.mov)
+![Linear Path](LinearPath.mov)
+
 A05:
 ![Follow Camera](FollowCamera.mov)
 ![Spring Camera](SpringCamera.mov)
