@@ -1,6 +1,11 @@
 # cs283-f24-assignments
 Assignment framework for CS283 Game Programming
 
+A08:
+Asset Credits
+https://assetstore.unity.com/packages/3d/props/food/match-3d-object-pack-fruits-vegetables-284706
+![Collection](A08.mov)
+
 A07:
 ![Motion](A07Motion.mov)
 
