@@ -15,13 +15,13 @@ A07:
 A06:
 Asset Credits
 https://assetstore.unity.com/packages/3d/characters/animals/animated-goat-and-sheep-3d-low-poly-free-251910
-![Gaze](Gaze.mov)
-![Cubic Path](CubicPath.mov)
-![Linear Path](LinearPath.mov)
+![Gaze](Gaze.gif)
+![Cubic Path](CubicPath.gif)
+![Linear Path](LinearPath.gif)
 
 A05:
-![Follow Camera](FollowCamera.mov)
-![Spring Camera](SpringCamera.mov)
+![Follow Camera](FollowCamera.gif)
+![Spring Camera](SpringCamera.gif)
 
 A04:
 ![Tour](A04Tour.gif)
