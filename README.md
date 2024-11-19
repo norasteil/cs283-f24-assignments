@@ -7,10 +7,10 @@ A09:
 A08:
 Asset Credits
 https://assetstore.unity.com/packages/3d/props/food/match-3d-object-pack-fruits-vegetables-284706
-![Collection](A08.mov)
+![Collection](A08.gif)
 
 A07:
-![Motion](A07Motion.mov)
+![Motion](A07.gif)
 
 A06:
 Asset Credits
@@ -24,7 +24,7 @@ A05:
 ![Spring Camera](SpringCamera.mov)
 
 A04:
-![Tour](A04Tour.mov)
+![Tour](A04Tour.gif)
 
 
 A03:
