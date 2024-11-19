@@ -2,7 +2,7 @@
 Assignment framework for CS283 Game Programming
 
 A09:
-![Wander](A09.mov)
+![Wander](A09.gif)
 
 A08:
 Asset Credits
