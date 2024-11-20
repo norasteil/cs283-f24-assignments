@@ -14,7 +14,8 @@ public class RigidFollowCamera : MonoBehaviour
         
     }
 
-    private void LateUpdate() {
+    private void LateUpdate() 
+    {
         Vector3 tPos = target.position;
         Vector3 tUp = target.up;
         Vector3 tForward = target.forward;
@@ -28,6 +29,5 @@ public class RigidFollowCamera : MonoBehaviour
         // Set the camera's position and rotation with the new values
         transform.position = eye;
         transform.rotation = Quaternion.LookRotation(cameraForward);
-
     }
 }

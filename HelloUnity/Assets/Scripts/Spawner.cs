@@ -13,7 +13,8 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < maxSpawn; i++) {
+        for (int i = 0; i < maxSpawn; i++) 
+        {
             SpawnObject();
         }
     }
@@ -21,35 +22,40 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < spawned.Count; i++) {
-            if (!spawned[i].activeInHierarchy) {
+        for (int i = 0; i < spawned.Count; i++) 
+        {
+            if (!spawned[i].activeInHierarchy) 
+            {
                 RespawnObject(spawned[i]);
             }
         }
     }
 
-    private void SpawnObject() {
+    private void SpawnObject() 
+    {
         Vector3 spawnPos = GetRandomPosition();
         GameObject newObj = Instantiate(prefab, spawnPos, Quaternion.identity);
         spawned.Add(newObj);
     }
 
-    private void RespawnObject(GameObject obj) {
+    private void RespawnObject(GameObject obj) 
+    {
         obj.transform.position = GetRandomPosition();
         obj.SetActive(true);
     }
 
-    private Vector3 GetRandomPosition() {
+    private Vector3 GetRandomPosition() 
+    {
         Vector3 randomOffset = new Vector3(Random.Range(-range, range), 0, Random.Range(-range, range));
         randomOffset.y = 0;
         Vector3 spawnPos = transform.position + randomOffset;
 
         Collider collider = prefab.GetComponent<Collider>();
-        if (collider != null) {
+        if (collider != null) 
+        {
             float terrainHeight = Terrain.activeTerrain.SampleHeight(spawnPos);
-            spawnPos.y = (terrainHeight + collider.bounds.extents.y + 1.2f) * 2;
+            spawnPos.y = terrainHeight;
         }
-
         return spawnPos;
     }
 }

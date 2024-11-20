@@ -20,7 +20,8 @@ public class Tour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N) && !inTransition) {
+        if (Input.GetKeyDown(KeyCode.N) && !inTransition) 
+        {
             currIdx = (currIdx + 1) % points.Length;
             startPos = transform.position;
             startRot = transform.rotation;
@@ -28,11 +29,13 @@ public class Tour : MonoBehaviour
             inTransition = true;
         }
 
-        if (inTransition) {
+        if (inTransition) 
+        {
             duration += Time.deltaTime * speed;
             transform.position = Vector3.Lerp(startPos, points[currIdx].position, duration);
             transform.rotation = Quaternion.Slerp(startRot, points[currIdx].rotation, duration);
-            if (duration >= 1.0f) {
+            if (duration >= 1.0f) 
+            {
                 inTransition = false;
             }
         }

@@ -7,8 +7,8 @@ public class SpringFollowCamera : MonoBehaviour
     public Transform target;
     public float hDist = 5.5f;
     public float vDist = 1.75f;
-    public float dampConstant = 1.0f;
-    public float springConstant = 1.5f;
+    public float dampConstant = 0.5f;
+    public float springConstant = 1.0f;
     private Vector3 velocity;
     private Vector3 actualPosition;
 
