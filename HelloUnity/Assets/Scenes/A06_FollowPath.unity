@@ -869,6 +869,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5776032249075293806, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1802070700}
+    - targetCorrespondingSourceObject: {fileID: 5776032249075293806, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1802070699}
     - targetCorrespondingSourceObject: {fileID: 4264764957370695126, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1501719883}
@@ -959,6 +965,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1707753416758605824, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
   m_PrefabInstance: {fileID: 1501719878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1802070698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5776032249075293806, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+  m_PrefabInstance: {fileID: 1501719878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1802070699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802070698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2a7fde73204fdfad542d81d5a6172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 1435480370}
+  - {fileID: 1973730972}
+  - {fileID: 1826460696}
+  - {fileID: 1810673721}
+  duration: 3
+--- !u!114 &1802070700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802070698}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e26d7232a5634b5596afbfecf9e148c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeCasteljau: 0
+  positions:
+  - {fileID: 324036096}
+  - {fileID: 701852862}
+  - {fileID: 1905164866}
+  - {fileID: 82333108}
+  moveSpeed: 20
 --- !u!1 &1810673720
 GameObject:
   m_ObjectHideFlags: 0
