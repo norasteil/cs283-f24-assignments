@@ -139,13 +139,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: A7Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 3053260206088916753, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053260206088916753, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053260206088916753, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053260206088916753, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3770450656029729548, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1017
       objectReference: {fileID: 0}
     - target: {fileID: 3770450656029729548, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.933184
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3770450656029729548, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_LocalPosition.z
@@ -183,10 +199,58 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1377097364}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4340648580710279642, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5079475412913551948, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079475412913551948, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079475412913551948, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079475412913551948, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417381741175024014, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417381741175024014, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417381741175024014, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417381741175024014, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6305332511199372068, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1377097364}
     - target: {fileID: 6788097539620126182, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -463,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678341677978830456, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.933186
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4678341677978830456, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -498,6 +562,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6443520075426487275, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1377097358}
+    - target: {fileID: 6443520075426487275, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -513,11 +581,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: A7Character
       objectReference: {fileID: 0}
+    - target: {fileID: 8165118495157237620, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1377097359}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
+--- !u!1 &1377097358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6824269363853910949, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
+  m_PrefabInstance: {fileID: 1377097357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1377097359 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1567386923030357102, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
+  m_PrefabInstance: {fileID: 1377097357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1377097364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4678341677978830456, guid: 65e9df0945aee468bb17461873b84bd6, type: 3}
