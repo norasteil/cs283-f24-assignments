@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VillagerNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 1444995299838969704, guid: 66eee84c240ac1347a5fc5c805193973, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 590439211}
     - target: {fileID: 3037824983836268163, guid: 66eee84c240ac1347a5fc5c805193973, type: 3}
       propertyPath: house
       value: 
@@ -339,6 +343,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66eee84c240ac1347a5fc5c805193973, type: 3}
+--- !u!95 &590439211 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 676298160847232375, guid: 66eee84c240ac1347a5fc5c805193973, type: 3}
+  m_PrefabInstance: {fileID: 590439210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &712764777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347,6 +356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5350465290773705082, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 712764778}
     - target: {fileID: 5776032249075293806, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
       propertyPath: m_Name
       value: kid3
@@ -408,6 +421,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+--- !u!95 &712764778 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 973739327217000110, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+  m_PrefabInstance: {fileID: 712764777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &741060522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +434,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5350465290773705082, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 741060523}
     - target: {fileID: 5776032249075293806, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
       propertyPath: m_Name
       value: kid1
@@ -477,6 +499,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+--- !u!95 &741060523 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 973739327217000110, guid: 8307f449fbafc9c4e8cef380c3972321, type: 3}
+  m_PrefabInstance: {fileID: 741060522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &958738216
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +713,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 4284239407154456754, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5079475412913551948, guid: 114ce9fb50ceb4103824131903f2b805, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -870,11 +909,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: kid2
       objectReference: {fileID: 0}
+    - target: {fileID: 8530395408573979287, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1359903022}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+--- !u!95 &1359903022 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 385643083952626670, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+  m_PrefabInstance: {fileID: 1359903021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1365905615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1157,11 +1205,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: WellGuardian
       objectReference: {fileID: 0}
+    - target: {fileID: 8530395408573979287, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1942253520}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+--- !u!95 &1942253520 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 385643083952626670, guid: d18aa2444a3fa8c429f4fe5d0cc90a5d, type: 3}
+  m_PrefabInstance: {fileID: 1942253519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1995614378
 GameObject:
   m_ObjectHideFlags: 0
