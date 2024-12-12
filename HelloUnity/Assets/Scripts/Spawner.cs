@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
     public float range = 10f;
-    public float maxSpawn = 10;
+    public int maxSpawn = 20;
 
     private List<GameObject> spawned = new List<GameObject>();
 
@@ -38,6 +38,7 @@ public class Spawner : MonoBehaviour
         spawned.Add(newObj);
     }
 
+    // is respawn working? don't think so
     private void RespawnObject(GameObject obj) 
     {
         obj.transform.position = GetRandomPosition();

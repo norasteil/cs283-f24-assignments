@@ -14,9 +14,12 @@ public class BehaviorMinion : MonoBehaviour
     public Transform enemy;
     private float duration = 10.0f;
 
-    private float followHDist = 4.0f;
-    private float velocity = 2.5f;
+    private float followHDist = 5.0f;
+    private float velocity = 2.0f;
     private Vector3 actualPosition;
+
+    public ChangeText changeText;
+    private float timeInRange;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,17 @@ public class BehaviorMinion : MonoBehaviour
         {
             // character is being followed, not home (keep following)
             Follow();
+
+            if (Vector3.Distance(character.position, enemy.position) <= 6.0f) 
+            {
+                timeInRange += Time.deltaTime;
+            }
+
+            if (timeInRange >= 3.5f && changeText.count > 0) 
+            {
+                changeText.Decrement();
+                timeInRange = 0;
+            }
         }
 
         if (!isHome && !isFollowing)

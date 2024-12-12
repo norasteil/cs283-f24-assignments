@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ChangeText : MonoBehaviour
+public class NPCDialogueChange : MonoBehaviour
 {
     public TextMeshProUGUI label;
-    public int count = 0;
+    public GameObject dialogue;
+    // private bool visible = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,21 +18,17 @@ public class ChangeText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        label.text = count.ToString();
 
-        if (count >= 20) 
-        {
-            label.text = "You defeated the goat!";
-        }
+    }
+    
+    public void Show() 
+    {
+        dialogue.SetActive(true);
+        label.text = "Villager: Hello!\n(Y): Greet Villager (N): Ignore Villager";
     }
 
-    public void Increment() 
+    public void Hide() 
     {
-        count++;
-    }
-
-    public void Decrement() 
-    {
-        count--;
+        dialogue.SetActive(false);
     }
 }

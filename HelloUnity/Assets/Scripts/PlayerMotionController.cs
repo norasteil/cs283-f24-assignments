@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMotionController : MonoBehaviour
 {
     public GameObject character;
-    public float moveSpeed = 1.0f;
+    public float moveSpeed = 2.0f;
     public float turnSpeed = 100.0f;
     public Animator animator;
     private Vector3 prevPosition;
@@ -13,6 +13,8 @@ public class PlayerMotionController : MonoBehaviour
     public BehaviorMinion behavior;
     public GameObject home;
     private float moveTime;
+    public Rigidbody rb;
+    // private float jumpForce = 100.0f;
 
     public string walkForwardAnimation = "walk_forward";
     public string runForwardAnimation = "run_forward";
@@ -24,6 +26,7 @@ public class PlayerMotionController : MonoBehaviour
     {
         prevPosition = transform.position;
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -57,6 +60,12 @@ public class PlayerMotionController : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
         }
 
+        if (Input.GetKeyDown("space")) 
+        {
+            // Debug.Log("space pressed");
+            transform.position = new Vector3(transform.position.x, transform.position.y * 2, transform.position.z);
+        }
+
         float terrainHeight = Terrain.activeTerrain.SampleHeight(transform.position);
         transform.position = new Vector3(transform.position.x, terrainHeight, transform.position.z);
         
@@ -72,17 +81,17 @@ public class PlayerMotionController : MonoBehaviour
         }
         else if (moveTime > 0.0f && moveTime < 1.5f) 
         {
-            velocity = 1.0f;
+            velocity = 2.0f;
             animator.Play(walkForwardAnimation);
         }
         else if (moveTime > 1.5f && moveTime < 3.0f) 
         {
-            velocity = 2.0f;
+            velocity = 3.0f;
             animator.Play(trotAnimation);
         }
         else if (moveTime > 3.0f) 
         {
-            velocity = 3.0f;
+            velocity = 4.0f;
             animator.Play(runForwardAnimation);
         }
     }

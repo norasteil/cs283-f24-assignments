@@ -14,26 +14,36 @@ public class BehaviorUnique : MonoBehaviour
     public Transform outside;
     private bool isInside = false;
     private float duration = 4.0f;
+    // public NPCDialogueChange changeDialogue;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("npc inside: " + isInside);
+        // Debug.Log("npc inside: " + isInside);
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // if (!isInside) 
+        // {
+        //     changeDialogue.Show();
+        // }
+        // else 
+        // {
+        //     changeDialogue.Hide();
+        // }
+
         animator.Play(idleAnimation);
-        Debug.Log("npc vs char " + Vector3.Distance(house.position, character.position));
+        // Debug.Log("npc vs char " + Vector3.Distance(house.position, character.position));
         if (Vector3.Distance(house.position, character.position) < 15f && isInside == true) 
         {
-            Debug.Log("npc moving outside");
+            // Debug.Log("npc moving outside");
             StartCoroutine(MoveOutside());
         }
         else if (Vector3.Distance(house.position, character.position) > 15f && isInside == false) {
-            Debug.Log("npc moving inside");
+            // Debug.Log("npc moving inside");
             StartCoroutine(MoveInside());
         }
     }
@@ -54,7 +64,7 @@ public class BehaviorUnique : MonoBehaviour
             yield return null;
         }
         isInside = false;
-        Debug.Log("npc inside: " + isInside);
+        // Debug.Log("npc inside: " + isInside);
     }
 
     IEnumerator MoveInside()
@@ -73,6 +83,6 @@ public class BehaviorUnique : MonoBehaviour
             yield return null;
         }
         isInside = true;
-        Debug.Log("npc inside: " + isInside);
+        // Debug.Log("npc inside: " + isInside);
     }
 }
