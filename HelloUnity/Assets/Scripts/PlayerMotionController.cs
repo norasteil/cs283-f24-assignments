@@ -66,7 +66,7 @@ public class PlayerMotionController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y * 2, transform.position.z);
         }
 
-        float terrainHeight = Terrain.activeTerrain.SampleHeight(transform.position);
+        float terrainHeight = (Terrain.activeTerrain.SampleHeight(transform.position));
         transform.position = new Vector3(transform.position.x, terrainHeight, transform.position.z);
         
         velocity = Vector3.Distance(transform.position, prevPosition) / Time.deltaTime;

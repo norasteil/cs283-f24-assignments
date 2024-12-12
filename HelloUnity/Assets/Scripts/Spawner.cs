@@ -55,6 +55,7 @@ public class Spawner : MonoBehaviour
         if (collider != null) 
         {
             float terrainHeight = Terrain.activeTerrain.SampleHeight(spawnPos);
+            Debug.Log("terrain height: " + terrainHeight);
             spawnPos.y = terrainHeight;
         }
         return spawnPos;
